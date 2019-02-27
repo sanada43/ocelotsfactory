@@ -73,7 +73,7 @@
       <input type="submit" name="submit" value="送信" />
     </form>
 <?php
-    $('#name').append('<option value="4">インド</option>');
+$("#name").append("<option value='999'>選択肢９９９</option>");
 
 ?>
 <p>説明</p>
