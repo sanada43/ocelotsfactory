@@ -24,7 +24,7 @@
             type : "POST",
             data : formdata,
             cache       : false,
-            contentType : false,
+            contentType : 'audio/wav',
             processData : false,
             dataType    : "html"
         })

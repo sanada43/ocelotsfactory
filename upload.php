@@ -18,8 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo 'ファイルを選択してください！';
  
     // ④テキストファイルじゃなかった場合
-    } elseif ($_FILES["file_1"]['type'] !== 'audio/wav') {
-        echo '音声ファイルを選択してください！';
+    //} elseif ($_FILES["file_1"]['type'] !== 'audio/wav') {
+      //  echo '音声ファイルを選択してください！';
  
     // アップロードが成功した場合
     } elseif ($_FILES["file_1"]['error'] === 0) {
