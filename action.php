@@ -2,7 +2,7 @@
 //$team_id = $_POST['name']
 
 //クライアントに返す検索結果はこいつに入れます
-//$response = array();
+$response = array();
 
 
 $row = "test"
