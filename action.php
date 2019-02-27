@@ -32,9 +32,9 @@ class WavCtrl {
         }
 
         // chunk 識別コード data が存在するかどうか調査
-        if (substr($this->_d, 36, 4) != 'data') {
+        /*if (substr($this->_d, 36, 4) != 'data') {
             return "識別コード dataがありません";
-        }
+        }*/
 
         // フォーマットID を取得します
         // リニアPCMだけを対象にするので、それ以外はエラー
@@ -58,15 +58,15 @@ class WavCtrl {
         // 44100hz のみを対象とします
         $d = unpack('V', substr($this->_d, 24, 4));
         $this->freq = $d[1];
-        return "周波数を調べました"
-        return $this->freq;
+        //return "周波数を調べました"
+        //return $this->freq;
 
         // データサイズを取得
         $d = unpack('V', substr($this->_d, 40, 4));
         $this->datasize = $d[1];
         
         
-
+        return "OK";
     }
 
 }
@@ -75,6 +75,9 @@ $fn = './file/' . $params['selectname'];
 	
 $wave = new WavCtrl();
 $myValue = $wave -> LoadFile($fn);
-if
-echo $myValue;
+
+$command="python3 stt.py";
+exec($command,$output);
+
+echo $output[0];
 ?>
