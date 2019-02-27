@@ -49,11 +49,13 @@
         // フォームデータを取得
         //var formdata = new FormData($('#filename').get(0));
         var selectVal = $("#file_id").val();
+        //alert(selectVal);
+        var postData = {"selectname":"".selectVal};
         // POSTでアップロード
         $.ajax({
             url  : "action.php",
             type : "POST",
-            data : { 'name': selectVal },
+            data : postData,
             cache       : false,
             contentType : false,
             processData : false,

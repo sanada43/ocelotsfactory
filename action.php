@@ -1,5 +1,5 @@
 <?php
-$team_id = $_POST['name']
+$team_id = $_POST['selectname']
 
 //クライアントに返す検索結果はこいつに入れます
 //$response = array();
@@ -12,5 +12,6 @@ $team_id = $_POST['name']
 //JSON形式で値を返します
 //echo(json_encode($response));
 
-echo $team_id;
+$result = 'こんにちは、' . $team_id;
+echo $result;
 ?>
