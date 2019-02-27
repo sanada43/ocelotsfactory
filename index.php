@@ -67,15 +67,15 @@
 
 <h2>変換ファイルの選択</h2>
     <form action="#" method="GET">
-      <select name="name" id="name">
+      <select id="name">
         <option value="who">--- どのファイルを選択しますか? ---</option>
-<?php
-        $('#name').append('<option value="4">インド</option>');
-
-?>
       </select>
       <input type="submit" name="submit" value="送信" />
     </form>
+<?php
+    $('#name').append('<option value="4">インド</option>');
+
+?>
 <p>説明</p>
 <p>説明</p>
 
