@@ -71,6 +71,9 @@
         })
         .fail(function(jqXHR, textStatus, errorThrown){
             alert("変換エラー");
+            alert("XMLHttpRequest : " + XMLHttpRequest.status);
+            alert("textStatus     : " + textStatus);
+            alert("errorThrown    : " + errorThrown.message);
         });
         
     }
