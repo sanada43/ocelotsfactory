@@ -47,7 +47,6 @@
     function wave()
     {
         // フォームデータを取得
-        //var formdata = new FormData($('#filename').get(0));
         var JSONdata = {
             selectname: $("#file_id").val(); 
         };
@@ -72,9 +71,6 @@
         })
         .fail(function(jqXHR, textStatus, errorThrown){
             alert("変換エラー");
-            alert("XMLHttpRequest : " + XMLHttpRequest.status);
-            alert("textStatus     : " + textStatus);
-            alert("errorThrown    : " + errorThrown.message);
         });
         
     }
