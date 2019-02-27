@@ -31,11 +31,15 @@
         })
         .done(function(data, textStatus, jqXHR){
             var filename = data;
-            alert(filename);
-            $("#name").append("<option value='1'>"+filename+"</option>");
+            if(filename =="NULL"){
+                alert("アップロード失敗、ファイル名を変えてもう１度試してみてください。");
+            }else{
+                alert("アップロード成功");
+                $("#name").append("<option value='1'>"+filename+"</option>");
+            }
         })
         .fail(function(jqXHR, textStatus, errorThrown){
-            alert("fail");
+            alert("アップロードエラー");
         });
     }
     
