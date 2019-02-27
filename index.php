@@ -72,16 +72,6 @@
     </form>
 <p>説明</p>
 <p>説明</p>
-<?php
-    foreach(glob('./file/{*.gif,*.zip,*.pdf}',GLOB_BRACE) as $file){
-        if(is_file($file)){
-            echo htmlspecialchars($file);
-        }
-
-    }
-}
-?>
-
 <h3>*** 見出し ***</h3>
 <p>テキスト</p>
 <p>テキスト</p>
