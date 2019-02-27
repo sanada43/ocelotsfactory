@@ -33,7 +33,7 @@
             if(filename =="NULL"){
                 alert("アップロード失敗、ファイル名を変えてもう１度試してみてください。");
             }else{
-                alert("アップロード成功");
+                alert(filename);
                 $("#file_id").append("<option value='"+filename+"'>"+filename+"</option>");
             }
         })
