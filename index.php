@@ -32,7 +32,7 @@
         .done(function(data, textStatus, jqXHR){
             var filename = data;
             alert(filename);
-            //$("#name").append("<option value='1'>+"filename"+</option>");
+            $("#name").append("<option value='1'>"+filename+"</option>");
         })
         .fail(function(jqXHR, textStatus, errorThrown){
             alert("fail");
