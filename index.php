@@ -72,10 +72,9 @@
       </select>
       <input type="submit" name="submit" value="送信" />
     </form>
-<?php
-$("#name").append("<option value='999'>選択肢９９９</option>");
-
-?>
+<script>
+    $("#name").append("<option value='999'>選択肢９９９</option>");
+</script>
 <p>説明</p>
 <p>説明</p>
 
