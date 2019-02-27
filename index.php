@@ -72,13 +72,12 @@
 <p>説明</p>
 
 <h2>変換ファイルの選択</h2>
-    <form action="#" method="GET">
+    <form action="./action.php" method="POST">
       <select id="name">
         <option value="who">--- どのファイルを選択しますか? ---</option>
       </select>
-      <input type="submit" name="submit" value="送信" />
+      <input type="submit" name="submit" value="変換" />
     </form>
-
 <p>説明</p>
 <p>説明</p>
 
