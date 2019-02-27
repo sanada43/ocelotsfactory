@@ -43,6 +43,36 @@
         });
     }
     
+    function action()
+    {
+        // フォームデータを取得
+        //var formdata = new FormData($('#filename').get(0));
+        var selectVal = $("#file_id").val();
+        // POSTでアップロード
+        // POSTでアップロード
+        $.ajax({
+            url  : "action.php",
+            type : "POST",
+            data : { name: selectVal },
+            cache       : false,
+            contentType : false,
+            processData : false,
+            dataType    : "html"
+        })
+        .done(function(data, textStatus, jqXHR){
+            var filename = data;
+            if(filename =="NULL"){
+                alert("変換失敗。");
+            }else{
+                alert(data);
+            }
+        })
+        .fail(function(jqXHR, textStatus, errorThrown){
+            alert("変換エラー");
+        });
+        
+
+    }
 </script>
 <!-- base layout css.design sample -->
 </head>
@@ -72,11 +102,11 @@
 <p>説明</p>
 
 <h2>変換ファイルの選択</h2>
-    <form action="./action.php" method="POST">
-      <select id="name">
+    <form id ="filename">
+      <select id="file_id" name="file_id">
         <option value="who">--- どのファイルを選択しますか? ---</option>
       </select>
-      <input type="submit" name="submit" value="変換" />
+      <button type="button" onclick="action()">変換</button>
     </form>
 <p>説明</p>
 <p>説明</p>
