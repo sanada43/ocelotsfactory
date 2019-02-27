@@ -42,13 +42,12 @@
             alert("アップロードエラー");
         });
     }
-    
+</script>
+<script>
     function action()
     {
-        alert("アクション。");
-
+        alert("テスト");
         
-
     }
 </script>
 <!-- base layout css.design sample -->
@@ -83,7 +82,7 @@
       <select id="file_id" name="file_id">
         <option value="who">--- どのファイルを選択しますか? ---</option>
       </select>
-      <button type="button" onclick="action()">変換</button>
+      <button type="button" onclick="wave()">変換</button>
     </form>
 <p>説明</p>
 <p>説明</p>
