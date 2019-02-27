@@ -1,4 +1,6 @@
 <?php
+
+require("input_form.php");
 // 一時アップロード先ファイルパス
 $file_tmp  = $_FILES["file_1"]["tmp_name"];
 
@@ -14,4 +16,11 @@ if ( $result === true ) {
     echo $file_save;
 }
 
+
+    foreach(glob('./file/{*.gif,*.zip,*.pdf}',GLOB_BRACE) as $file){
+    if(is_file($file)){
+        $input_file[] = htmlspecialchars($file);
+        
+    }
+}
 ?>

@@ -1,4 +1,6 @@
-﻿
+﻿<?php
+	require("input_form.php");
+?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
@@ -66,23 +68,17 @@
 <h2>変換ファイルの選択</h2>
     <form action="#" method="GET">
       <select name="name" id="name">
-        <option value="who">--- 誰を選択しますか? ---</option>
+        <option value="who">--- どのファイルを選択しますか? ---</option>
+<?php
+        $('#name').append('<option value="4">インド</option>');
+
+?>
       </select>
       <input type="submit" name="submit" value="送信" />
     </form>
 <p>説明</p>
 <p>説明</p>
-<?php
 
-
-    foreach(glob('./file/{*.gif,*.zip,*.pdf}',GLOB_BRACE) as $file){
-        if(is_file($file)){
-            echo htmlspecialchars($file);
-        }
-    }
-
-
-?>
 <h3>*** 見出し ***</h3>
 <p>テキスト</p>
 <p>テキスト</p>
