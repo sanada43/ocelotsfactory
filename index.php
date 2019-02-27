@@ -53,7 +53,7 @@
         $.ajax({
             url  : "action.php",
             type : "POST",
-            data : { name: selectVal },
+            data : { 'name': selectVal },
             cache       : false,
             contentType : false,
             processData : false,
