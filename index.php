@@ -34,7 +34,7 @@
                 alert("アップロード失敗、ファイル名を変えてもう１度試してみてください。");
             }else{
                 alert("アップロード成功");
-                $("#file_id").append("<option value='1'>"+filename+"</option>");
+                $("#file_id").append("<option value='"+filename+"'>"+filename+"</option>");
             }
         })
         .fail(function(jqXHR, textStatus, errorThrown){
@@ -95,7 +95,7 @@
 
 <h2>アップローダー</h2>
     <form id="my_form">
-        <input type="file" name="file_1">
+        <input type="file" name="file_1" accept='audio/wav'>
         <button type="button" onclick="file_upload()">アップロード</button>
     </form>
 <p>説明</p>
@@ -104,7 +104,7 @@
 <h2>変換ファイルの選択</h2>
     <form id ="filename">
       <select id="file_id" name="file_id">
-        <option value="who">--- どのファイルを選択しますか? ---</option>
+        <option value="NULL">--- どのファイルを選択しますか? ---</option>
       </select>
       <button type="button" onclick="wave()">変換</button>
     </form>
