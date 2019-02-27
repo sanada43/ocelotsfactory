@@ -1,7 +1,6 @@
 ﻿<?php
 	require("input_form.php");
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
@@ -48,7 +47,7 @@
     {
         // フォームデータを取得
         var JSONdata = {
-            selectname: $("#file_id").val(); 
+            selectname: $("#file_id").val() 
         };
         alert(JSON.stringify(JSONdata));
         // POSTでアップロード
