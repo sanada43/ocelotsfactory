@@ -58,18 +58,21 @@ class WavCtrl {
         // 44100hz のみを対象とします
         $d = unpack('V', substr($this->_d, 24, 4));
         $this->freq = $d[1];
+        return $this->freq;
 
         // データサイズを取得
         $d = unpack('V', substr($this->_d, 40, 4));
         $this->datasize = $d[1];
+        
+        
 
     }
 
 }
 
 $fn = './file/' . $params['selectname'];
-
-
-echo $fn;
-
+	
+$wave = new WavCtrl();
+$myValue = $wave -> LoadFile($fn);
+echo $myValue;
 ?>
