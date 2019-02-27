@@ -35,7 +35,7 @@
                 alert("アップロード失敗、ファイル名を変えてもう１度試してみてください。");
             }else{
                 alert("アップロード成功");
-                $("#name").append("<option value='1'>"+filename+"</option>");
+                $("#file_id").append("<option value='1'>"+filename+"</option>");
             }
         })
         .fail(function(jqXHR, textStatus, errorThrown){
@@ -43,7 +43,35 @@
         });
     }
     
+    function action()
+    {
+        // フォームデータを取得
+        //var formdata = new FormData($('#filename').get(0));
+        var selectVal = $("#file_id").val();
+        // POSTでアップロード
+        $.ajax({
+            url  : "action.php",
+            type : "POST",
+            data : { name: selectVal },
+            cache       : false,
+            contentType : false,
+            processData : false,
+            dataType    : "html"
+        })
+        .done(function(data, textStatus, jqXHR){
+            var filename = data;
+            if(filename =="NULL"){
+                alert("変換失敗。");
+            }else{
+                alert(data);
+            }
+        })
+        .fail(function(jqXHR, textStatus, errorThrown){
+            alert("変換エラー");
+        });
+        
 
+    }
 </script>
 <!-- base layout css.design sample -->
 </head>
