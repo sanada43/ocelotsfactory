@@ -1,13 +1,11 @@
 <?php
-$team_id = $_POST['name']
+//$team_id = $_POST['name']
 
 //クライアントに返す検索結果はこいつに入れます
-$response = array();
-
-//DBからチームIDに合致する選手名を取得します
+//$response = array();
 
 
-$row = $team_id
+$row = "test"
 array_push($response, $row);
 
 
