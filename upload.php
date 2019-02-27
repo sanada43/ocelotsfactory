@@ -10,8 +10,8 @@ $result = @move_uploaded_file($file_tmp, $file_save);
 if ( $result === true ) {
     echo "UPLOAD OK";
 } else {
-    echo "UPLOAD NG";
-    echo $file_save
+    //echo "UPLOAD NG";
+    echo $file_save;
 }
 
 ?>
