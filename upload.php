@@ -11,17 +11,18 @@ $file_save = "./file/" . $_FILES["file_1"]["name"];
 // ファイル移動
 $result = @move_uploaded_file($file_tmp, $file_save);
 if ( $result === true ) {
-    echo "UPLOAD OK";
-} else {
-    //echo "UPLOAD NG";
     echo $file_save;
+} else {
+    echo "UPLOAD NG";
+    //echo $file_save;
 }
 
-
+    /*
     foreach(glob('./file/{*.gif,*.zip,*.pdf}',GLOB_BRACE) as $file){
     if(is_file($file)){
         $input_file[] = htmlspecialchars($file);
         
     }
+    */
 }
 ?>

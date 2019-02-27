@@ -30,7 +30,9 @@
             dataType    : "html"
         })
         .done(function(data, textStatus, jqXHR){
-            alert(data);
+            var filename = data;
+            alert("upload OK");
+            $("#name").append("<option value='1'>+"filename"+</option>");
         })
         .fail(function(jqXHR, textStatus, errorThrown){
             alert("fail");
@@ -72,9 +74,7 @@
       </select>
       <input type="submit" name="submit" value="送信" />
     </form>
-<script>
-    $("#name").append("<option value='999'>選択肢９９９</option>");
-</script>
+
 <p>説明</p>
 <p>説明</p>
 
