@@ -44,9 +44,32 @@
     }
 </script>
 <script>
-    function action()
+    function wave()
     {
-        alert("テスト");
+        // フォームデータを取得
+        //var formdata = new FormData($('#filename').get(0));
+        var selectVal = $("#file_id").val();
+        // POSTでアップロード
+        $.ajax({
+            url  : "action.php",
+            type : "POST",
+            data : { name: selectVal },
+            cache       : false,
+            contentType : false,
+            processData : false,
+            dataType    : "html"
+        })
+        .done(function(data, textStatus, jqXHR){
+            var filename = data;
+            if(filename =="NULL"){
+                alert("変換失敗。");
+            }else{
+                alert(data);
+            }
+        })
+        .fail(function(jqXHR, textStatus, errorThrown){
+            alert("変換エラー");
+        });
         
     }
 </script>
