@@ -22,8 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       //  echo '音声ファイルを選択してください！';
  
     // アップロードが成功した場合
-    } elseif ($_FILES["file_1"]['error'] === 0) {
-    // アップロードされたファイルに、パスとファイル名を設定して保存
+    }else{
         $result = @move_uploaded_file($file_tmp, $file_save);
         if ( $result === true ) {
             echo "".$_FILES["file_1"]["name"];
@@ -31,9 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "NULL";
         //echo $file_save;
         }
-    }else {
-        echo 'アップロードに失敗しました！';
     }
+
 }else{
     echo '不正なアクセスです！';
 }
