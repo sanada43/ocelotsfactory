@@ -18,22 +18,22 @@ class WavCtrl {
 
         // 先頭4バイトが、RIFF でなければ、WAV ファイルではない。
         if (substr($this->_d, 0, 4) != 'RIFF') {
-            return false;
+            return "Wavファイルではありません";
         }
 
         // chunk 識別コード WAVE が存在するかどうか調査
         if (substr($this->_d, 8, 4) != 'WAVE') {
-            return false;
+            return "識別コード WAVEがありません";
         }
 
         // chunk 識別コード fmt が存在するかどうか調査
         if (substr($this->_d, 12, 4) != 'fmt ') {
-            return false;
+            return "識別コード fmtがありません";
         }
 
         // chunk 識別コード data が存在するかどうか調査
         if (substr($this->_d, 36, 4) != 'data') {
-            return false;
+            return "識別コード dataがありません";
         }
 
         // フォーマットID を取得します
@@ -42,7 +42,7 @@ class WavCtrl {
         $this->fmtid = $d[1];
 
         if ($this->fmtid != 1) {
-            return false;
+            return "リニアPCMではありません";
         }
 
         // チャンネル数を取得
@@ -51,13 +51,14 @@ class WavCtrl {
         $this->chsize = $d[1];
 
         if ($this->fmtid != 1) {
-            return false;
+            return "モノラルチャンネルではありません";
         }
 
         // サンプリング周波数を取得
         // 44100hz のみを対象とします
         $d = unpack('V', substr($this->_d, 24, 4));
         $this->freq = $d[1];
+        return "周波数を調べました"
         return $this->freq;
 
         // データサイズを取得
@@ -74,5 +75,6 @@ $fn = './file/' . $params['selectname'];
 	
 $wave = new WavCtrl();
 $myValue = $wave -> LoadFile($fn);
+if
 echo $myValue;
 ?>
