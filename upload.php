@@ -1,6 +1,7 @@
 <?php
 
 require("input_form.php");
+
 // 一時アップロード先ファイルパス
 $file_tmp  = $_FILES["file_1"]["tmp_name"];
 
