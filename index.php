@@ -48,16 +48,17 @@
     {
         // フォームデータを取得
         //var formdata = new FormData($('#filename').get(0));
-        var selectVal = $("#file_id").val();
-        //alert(selectVal);
-        var postData = {"selectname":"".selectVal};
+        var JSONdata = {
+            selectname: $("#file_id").val(); 
+        };
+        alert(JSON.stringify(JSONdata));
         // POSTでアップロード
         $.ajax({
             url  : "action.php",
             type : "POST",
-            data : postData,
+            data : JSON.stringify(JSONdata),
             cache       : false,
-            contentType : false,
+            contentType : 'application/JSON',
             processData : false,
             dataType    : "html"
         })
