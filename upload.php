@@ -5,7 +5,7 @@ require("input_form.php");
 // 一時アップロード先ファイルパス
 if (isset($_FILES["file_1"]["tmp_name"])) {
     $file_tmp  = $_FILES["file_1"]["tmp_name"];
-    }
+    
 
     // 正式保存先ファイルパス
     $file_save = "./file/" . $_FILES["file_1"]["name"];
