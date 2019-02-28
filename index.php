@@ -95,7 +95,7 @@
 
 <h2>アップローダー</h2>
     <form id="my_form">
-        <input type="file" name="file_1" accept='audio/wav'>
+        <input type="file" name="file_1" accept='audio/wav' enctype="multipart/form-data">>   
         <button type="button" onclick="file_upload()">アップロード</button>
     </form>
 <p>説明</p>
