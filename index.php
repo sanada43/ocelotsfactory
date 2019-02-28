@@ -33,8 +33,9 @@
             if(filename =="NULL"){
                 alert("アップロード失敗、ファイル名を変えてもう１度試してみてください。");
             }else{
-                alert(filename);
+                alert("アップロード成功");
                 $("#file_id").append("<option value='"+filename+"'>"+filename+"</option>");
+                
             }
         })
         .fail(function(jqXHR, textStatus, errorThrown){
@@ -65,8 +66,10 @@
             if(filename =="NULL"){
                 alert("変換失敗。");
             }else{
-                alert(data);
-            }
+                alert("変換しました。");
+                const textarea2= document.getElementById("txt");
+                textarea2.value = data;
+                document.getElementById("span2").textContent = textarea2.value; 
         })
         .fail(function(jqXHR, textStatus, errorThrown){
             alert("変換エラー");
@@ -83,7 +86,7 @@
 <!-- キーワード -->
 <h1>音声文字起こしＷＥＢ</h1>
 <!-- ページの概要 -->
-<p class="description">ＩＣレコーダーで録音した音声ファイルをアップロードすると</br>文字に変換して表示します。</br>アップロードできる音声ファイルは以下の通りです。</br>・Wav ・FLAC</br>文字に起こす際に音声を９分ごとに分割します。</p>
+<p class="description">ＩＣレコーダーで録音した音声ファイルをアップロード</br>すると文字に変換して表示します。</br>アップロードできる音声ファイルは以下の通りです。</br>・Wav</br>文字に起こす際に音声を９分ごとに分割します。</p>
 <!-- 企業名｜ショップ名｜タイトル -->
 <p class="logo"><a href="index.html">大崎コンピュータエンヂニアリング</a></p>
 </div></div>
@@ -98,8 +101,8 @@
         <input type="file" name="file_1" accept='audio/wav'>
         <button type="button" onclick="file_upload()">アップロード</button>
     </form>
-<p>説明</p>
-<p>説明</p>
+<p>WAVファイルを選択してアップロードボタンを押してください。</p>
+<p></p>
 
 <h2>変換ファイルの選択</h2>
     <form id ="filename">
@@ -108,12 +111,15 @@
       </select>
       <button type="button" onclick="wave()">変換</button>
     </form>
-<p>説明</p>
-<p>説明</p>
+<p>アップロードした音声ファイルが一覧で表示されます。</p>
+<p>その中で変換したいファイルを選択して変換ボタンを押してください</p>
 
-<h3>*** 見出し ***</h3>
-<p>テキスト</p>
-<p>テキスト</p>
+<h3>変換結果</h3>
+<p>変換結果が表示されます</p>
+<form name="result">
+    <span id="span2"></span>
+    <textarea id="txt" rows="10" cols="50" readonly></textarea>
+</form>
 
 <!-- コンテンツここまで -->
 </div><!-- // contents end -->

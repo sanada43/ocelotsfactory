@@ -21,9 +21,10 @@ def transcript_wav(file):  # WAVファイルを刈り奪る　形をしてるだ
     client = storage.Client()
     bucket = client.get_bucket(bucketname)
 
-    filename = './output/'+ file
+    filename = file
     blob = bucket.blob(filename)
-    blob.upload_from_filename(filename='./file/'+filename)
+    blob.upload_from_filename(filename='./'+filename)
+    content = blob.download_as_string()
     #ダウンロードした音声データからencoding、rate、lengthの情報を取得
     mime = magic.Magic(mime=True).from_buffer(content)
     if mime == 'audio/x-wav' and '.wav' in filename:
@@ -140,6 +141,7 @@ def cut_wav(filename,time):  # WAVファイルを刈り奪る　形をしてる�
         ww.setframerate(fr)
         ww.writeframes(outd)
         ww.close()
+    return namelist
         
 if __name__ == '__main__':
     args = sys.argv
