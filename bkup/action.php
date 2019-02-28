@@ -77,7 +77,7 @@ $wave = new WavCtrl();
 $myValue = $wave -> LoadFile($fn);
 $command="rm ./output/*";
 exec($command,$output);
-$command="python3 stt.py " . $fn ." 60";
+$command="python3 stt.py " . $fn ." 540";
 exec($command,$output);
 
 echo $output[0];

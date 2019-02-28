@@ -6,6 +6,82 @@ import math
 import os
 from scipy import fromstring, int16
 
+from google.cloud import speech
+from google.cloud.speech import enums
+from google.cloud import storage 
+from mutagen.flac import FLAC
+from pydub import AudioSegment
+import magic
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]='/home/site/wwwroot/My_Project-a2abf9b82b9a.json'
+bucketname = 'trancestorage'
+
+def transcript_wav(file):  # WAVファイルを刈り奪る　形をしてるだろ？ 
+    
+    client = storage.Client()
+    bucket = client.get_bucket(bucketname)
+
+    filename = './output/'+ file
+    blob = bucket.blob(filename)
+    blob.upload_from_filename(filename='./file/'+filename)
+    #ダウンロードした音声データからencoding、rate、lengthの情報を取得
+    mime = magic.Magic(mime=True).from_buffer(content)
+    if mime == 'audio/x-wav' and '.wav' in filename:
+        encoding = 'LINEAR16'
+        sound = AudioSegment(content)
+        if sound.channels != 1:
+            #print('Must use single channel (mono) audio')
+            sys.exit()
+        rate = sound.frame_rate
+        length = sound.duration_seconds
+    elif mime == 'audio/x-flac' and '.flac' in filename:
+        encoding = 'FLAC'
+        with open(filename, 'wb') as f:
+            f.write(content)
+            f.close()
+        sound = FLAC(filename).info
+        if sound.channels != 1:
+            #print('Must use single channel (mono) audio')
+            sys.exit()
+        rate = sound.sample_rate
+        length = sound.length
+    else:
+        #print('Acceptable type is only "wav" or "flac".')
+        sys.exit()
+    """
+    print('\n-*- audio info -*-')
+    print('filename   : ' + filename)
+    print('mimetype   : ' + mime)
+    print('sampleRate : ' + str(rate))
+    print('playtime   : ' + str(length) + 's')
+    print('\nWaiting for operation to complete...')
+    """
+
+    client = speech.SpeechClient()
+
+    audio = {'uri':'gs://' + bucketname + '/' + filename}
+    config = {'encoding':encoding,'sample_rate_hertz':rate,'language_code':'ja-JP'}
+
+    if length < 60:
+    #再生時間が1分未満の場合
+        response = client.recognize(config, audio)
+    else:
+    #再生時間が1分以上の場合
+        operation = client.long_running_recognize(config, audio)
+        response = operation.result(timeout=length)
+
+    #print('\n-*- transcribe result -*-')
+    f = open("./result.txt","wb")
+
+    for result in response.results:
+    #結果をコンソール出力
+        #print('Transcript: {}'.format(result.alternatives[0].transcript.encode("sjis")))
+        f.write(result.alternatives[0].transcript.encode("sjis"))
+        pass
+
+    f.close()
+    
+
 def cut_wav(filename,time):  # WAVファイルを刈り奪る　形をしてるだろ？ 
     # timeの単位は[sec]
 
@@ -44,11 +120,12 @@ def cut_wav(filename,time):  # WAVファイルを刈り奪る　形をしてる�
     X = fromstring(data, dtype=int16)
     #print(X)
 
-
+    namelist = []
     for i in range(num_cut):
         #print(i)
         # 出力データを生成
         outf = 'output/' + str(i) + '.wav' 
+        namelist.append(outf)
         start_cut = i*frames
         end_cut = i*frames + frames
         #print(start_cut)
@@ -66,8 +143,10 @@ def cut_wav(filename,time):  # WAVファイルを刈り奪る　形をしてる�
         
 if __name__ == '__main__':
     args = sys.argv
-    cut_wav(args[1],args[2])
+    filelist = cut_wav(args[1],args[2])
     
-    
+    for file in filelist:
+        transcript_wav(file)
+        
     
     print("cut OK")
