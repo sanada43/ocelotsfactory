@@ -24,7 +24,7 @@
             type : "POST",
             data : formdata,
             cache       : false,
-            contentType : 'audio/wav',
+            contentType : false,
             processData : false,
             dataType    : "html"
         })
@@ -95,7 +95,7 @@
 
 <h2>アップローダー</h2>
     <form id="my_form">
-        <input type="file" name="file_1" accept='audio/wav' enctype="multipart/form-data">>   
+        <input type="file" name="file_1" accept='audio/wav'>
         <button type="button" onclick="file_upload()">アップロード</button>
     </form>
 <p>説明</p>
