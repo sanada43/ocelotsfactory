@@ -69,7 +69,7 @@
                 alert("変換しました。");
                 const textarea2= document.getElementById("txt");
                 textarea2.value = data;
-                document.getElementById("span2").textContent = textarea2.value; 
+                //document.getElementById("span2").textContent = textarea2.value; 
             }
         })
         .fail(function(jqXHR, textStatus, errorThrown){
