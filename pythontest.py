@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import wave
 import struct
 import math
