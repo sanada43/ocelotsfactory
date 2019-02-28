@@ -38,6 +38,6 @@ if (isset($_FILES["file_1"]["tmp_name"])) {
         echo '不正なアクセスです！';
     }
 }else{
-    echo 'ファイルが入ってません'；
+    echo 'ファイルが入ってません';
 }
 ?>
