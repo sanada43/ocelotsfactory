@@ -10,7 +10,7 @@ def cut_wav(filename,time):  # WAVファイルを刈り奪る　形をしてる�
     # timeの単位は[sec]
 
     # ファイルを読み出し
-    wavf = filename + '.wav'
+    wavf = filename
     wr = wave.open(wavf, 'r')
 
     # waveファイルが持つ性質を取得
@@ -67,5 +67,7 @@ def cut_wav(filename,time):  # WAVファイルを刈り奪る　形をしてる�
 if __name__ == '__main__':
     args = sys.argv
     cut_wav(args[1],args[2])
+    
+    
     
     print("cut OK")
