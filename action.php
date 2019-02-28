@@ -76,7 +76,7 @@ $fn = './file/' . $params['selectname'];
 $wave = new WavCtrl();
 $myValue = $wave -> LoadFile($fn);
 
-$command="python3 stt.py";
+$command="python3 stt.py " . $fn ." 540";
 exec($command,$output);
 
 echo $output[0];
