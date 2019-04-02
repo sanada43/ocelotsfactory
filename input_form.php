@@ -1,4 +1,0 @@
-<?php
-    $input_file = [];
-
-?>
