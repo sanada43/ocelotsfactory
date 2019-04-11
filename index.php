@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ï»¿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -14,46 +14,46 @@
 <div id="wrapper">
 <div id="header">
 <div id="header-inner">
-<!-- ƒL[ƒ[ƒh -->
+<!-- ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ -->
 <h1>OCELOTS FACTORY View</h1>
-<!-- ƒy[ƒW‚ÌŠT—v -->
-<p class="description">‚h‚‚sŠÄŽ‹‹@Ší‚©‚çŽæ“¾‚µ‚½î•ñ‚ð•\Ž¦‚µ‚Ü‚·B</p>
-<!-- Šé‹Æ–¼bƒVƒ‡ƒbƒv–¼bƒ^ƒCƒgƒ‹ -->
-<p class="logo"><a href="index.html">•\Ž¦‰æ–Ê</a></p>
+<!-- ãƒšãƒ¼ã‚¸ã®æ¦‚è¦ -->
+<p class="description">ï¼©ï½ï¼´ç›£è¦–æ©Ÿå™¨ã‹ã‚‰å–å¾—ã—ãŸæƒ…å ±ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚</p>
+<!-- ä¼æ¥­åï½œã‚·ãƒ§ãƒƒãƒ—åï½œã‚¿ã‚¤ãƒˆãƒ« -->
+<p class="logo"><a href="index.html">è¡¨ç¤ºç”»é¢</a></p>
 </div></div>
 <!-- // header end -->
 
 <div id="container">
 <div id="contents">
 <div id="contents-inner">
-<!-- ƒRƒ“ƒeƒ“ƒc‚±‚±‚©‚ç -->
+<!-- ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã“ã“ã‹ã‚‰ -->
 
-<h2 id="temp">‰·“xƒOƒ‰ƒt</h2>
+<h2 id="temp">æ¸©åº¦ã‚°ãƒ©ãƒ•</h2>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMjUwZmMxNjctMmNjNC00Mjg0LWI4ZTQtYTgyYjUxMzAxMTVkIiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<p>ƒeƒLƒXƒg</p>
+<p>ãƒ†ã‚­ã‚¹ãƒˆ</p>
 
-<h2 id="hum">Ž¼“xƒOƒ‰ƒt</h2>
+<h2 id="hum">æ¹¿åº¦ã‚°ãƒ©ãƒ•</h2>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYjlmMmMwOTItMmQwNS00MTdhLThjYzAtZTk1MTlmMGIxMGY3IiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<p>ƒeƒLƒXƒg</p>
+<p>ãƒ†ã‚­ã‚¹ãƒˆ</p>
 
-<h2 id="pres">‹Cˆ³ƒOƒ‰ƒt</h2>
+<h2 id="pres">æ°—åœ§ã‚°ãƒ©ãƒ•</h2>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMDkxYWQ3YjQtMWIzOC00MDc5LTlhNTYtZWQ1ZmIwNTgyMjEzIiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<p>ƒeƒLƒXƒg</p>
+<p>ãƒ†ã‚­ã‚¹ãƒˆ</p>
 
-<h2 id="amp">“d—¬ƒOƒ‰ƒt</h2>
+<h2 id="amp">é›»æµã‚°ãƒ©ãƒ•</h2>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNDExNmNiZWMtMWZmYS00ODlhLTg0NWMtNjBjYzA5Yzg5NmEyIiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<p>ƒeƒLƒXƒg</p>
+<p>ãƒ†ã‚­ã‚¹ãƒˆ</p>
 
-<h2 id="co2">‚b‚n‚QƒOƒ‰ƒt</h2>
+<h2 id="co2">ï¼£ï¼¯ï¼’ã‚°ãƒ©ãƒ•</h2>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWNiMzE2ZTktOTc3Yi00YmEwLWE4ZWQtMjc4ODFkMDNlYTkxIiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<p>ƒeƒLƒXƒg</p>
+<p>ãƒ†ã‚­ã‚¹ãƒˆ</p>
 
-<h3>•\</h3>
-<h2 id="card">ƒJ[ƒhƒŒƒ|[ƒg</h2>
+<h3>è¡¨</h3>
+<h2 id="card">ã‚«ãƒ¼ãƒ‰ãƒ¬ãƒãƒ¼ãƒˆ</h2>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWY5NTEyMzQtZjZiNC00MGJlLTkxM2ItNTQzZDE4ZjFkNjI1IiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
-<p>ƒeƒLƒXƒg</p>
-<p>ƒeƒLƒXƒg</p>
-<h2 id="card">ŽÊ^</h2>
+<p>ãƒ†ã‚­ã‚¹ãƒˆ</p>
+<p>ãƒ†ã‚­ã‚¹ãƒˆ</p>
+<h2 id="card">å†™çœŸ</h2>
 <img src="https://ocelotsfactorysakurada.blob.core.windows.net/ocelotsfactoryuploader/raspberrypi00/001.png">
 
 <?php
@@ -88,76 +88,76 @@ catch(ServiceException $e){
 }
 ?>
 
-<!-- ƒRƒ“ƒeƒ“ƒc‚±‚±‚Ü‚Å -->
+<!-- ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã“ã“ã¾ã§ -->
 </div><!-- // contents-inner end -->
 </div><!-- // contents end -->
 
 <div id="left-sidebar">
-<!-- ¶ƒTƒCƒhƒo[‚±‚±‚©‚ç -->
+<!-- å·¦ã‚µã‚¤ãƒ‰ãƒãƒ¼ã“ã“ã‹ã‚‰ -->
 
-<p class="side-title">ƒf[ƒ^</p>
+<p class="side-title">ãƒ‡ãƒ¼ã‚¿</p>
 <ul class="localnavi">
-<li><a href="#temp">‰·“xƒOƒ‰ƒt</a></li>
-<li><a href="#pres">‹Cˆ³ƒOƒ‰ƒt</a></li>
-<li><a href="#hum">Ž¼“xƒOƒ‰ƒt</a></li>
-<li><a href="#amp">“d—¬ƒOƒ‰ƒt</a></li>
-<li><a href="#co2">CO2ƒOƒ‰ƒt</a></li>
+<li><a href="#temp">æ¸©åº¦ã‚°ãƒ©ãƒ•</a></li>
+<li><a href="#pres">æ°—åœ§ã‚°ãƒ©ãƒ•</a></li>
+<li><a href="#hum">æ¹¿åº¦ã‚°ãƒ©ãƒ•</a></li>
+<li><a href="#amp">é›»æµã‚°ãƒ©ãƒ•</a></li>
+<li><a href="#co2">CO2ã‚°ãƒ©ãƒ•</a></li>
 
 </ul>
-<p class="side-title">*** ƒ^ƒCƒgƒ‹ ***</p>
+<p class="side-title">*** ã‚¿ã‚¤ãƒˆãƒ« ***</p>
 <ul class="localnavi">
-<li><a href="#card">ƒJ[ƒhƒŠ[ƒ_[</a></li>
-<li><a href="#picture">ŽÊ^ˆê——</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
+<li><a href="#card">ã‚«ãƒ¼ãƒ‰ãƒªãƒ¼ãƒ€ãƒ¼</a></li>
+<li><a href="#picture">å†™çœŸä¸€è¦§</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
 </ul>
 
 <dl class="sidebar-dl">
-<dt>*** ƒ^ƒCƒgƒ‹ ***</dt>
+<dt>*** ã‚¿ã‚¤ãƒˆãƒ« ***</dt>
 <dd>
-<p>ƒTƒ“ƒvƒ‹XVB</p>
-<p>ƒTƒ“ƒvƒ‹XVB</p>
-<p>ƒTƒ“ƒvƒ‹XVB</p>
-<p>ƒTƒ“ƒvƒ‹XVB</p>
-<p>ƒTƒ“ƒvƒ‹XVB</p>
-<p>ƒTƒ“ƒvƒ‹XVB</p>
+<p>ã‚µãƒ³ãƒ—ãƒ«æ›´æ–°ã€‚</p>
+<p>ã‚µãƒ³ãƒ—ãƒ«æ›´æ–°ã€‚</p>
+<p>ã‚µãƒ³ãƒ—ãƒ«æ›´æ–°ã€‚</p>
+<p>ã‚µãƒ³ãƒ—ãƒ«æ›´æ–°ã€‚</p>
+<p>ã‚µãƒ³ãƒ—ãƒ«æ›´æ–°ã€‚</p>
+<p>ã‚µãƒ³ãƒ—ãƒ«æ›´æ–°ã€‚</p>
 </dd>
 </dl>
-<!--¶ƒTƒCƒhƒo[‚±‚±‚Ü‚Å-->
+<!--å·¦ã‚µã‚¤ãƒ‰ãƒãƒ¼ã“ã“ã¾ã§-->
 </div><!-- // left-sidebar end -->
 </div><!-- // container end -->
 
 <div id="right-sidebar">
-<!--‰EƒTƒCƒhƒo[‚±‚±‚©‚ç-->
+<!--å³ã‚µã‚¤ãƒ‰ãƒãƒ¼ã“ã“ã‹ã‚‰-->
 
 
 <div class="sticky">
-<p class="side-title">*** ƒ^ƒCƒgƒ‹ ***</p>
+<p class="side-title">*** ã‚¿ã‚¤ãƒˆãƒ« ***</p>
 <ul class="localnavi">
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
 </ul>
-<p class="side-title">*** ƒ^ƒCƒgƒ‹ ***</p>
+<p class="side-title">*** ã‚¿ã‚¤ãƒˆãƒ« ***</p>
 <ul class="localnavi">
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
-<li><a href="#">*** ƒŠƒ“ƒN ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
+<li><a href="#">*** ãƒªãƒ³ã‚¯ ***</a></li>
 </ul>
 </div>
 
-<!--‰EƒTƒCƒhƒo[‚±‚±‚Ü‚Å-->
+<!--å³ã‚µã‚¤ãƒ‰ãƒãƒ¼ã“ã“ã¾ã§-->
 </div><!-- // right-sidebar end -->
-<!-- «íœ•s‰Â -->
+<!-- â†“å‰Šé™¤ä¸å¯ -->
 <p id="cds">Designed by <a href="http://www.css-designsample.com/">CSS.Design Sample</a></p>
 <div id="footer">
-<!-- ƒRƒs[ƒ‰ƒCƒg / ’˜ìŒ •\Ž¦ -->
-<p>Copyright &copy; *** Šé‹Æ–¼bƒVƒ‡ƒbƒv–¼bƒ^ƒCƒgƒ‹‚È‚Ç ***. All Rights Reserved.</p>
+<!-- ã‚³ãƒ”ãƒ¼ãƒ©ã‚¤ãƒˆ / è‘—ä½œæ¨©è¡¨ç¤º -->
+<p>Copyright &copy; *** ä¼æ¥­åï½œã‚·ãƒ§ãƒƒãƒ—åï½œã‚¿ã‚¤ãƒˆãƒ«ãªã© ***. All Rights Reserved.</p>
 </div>
 </div>
 </body>
