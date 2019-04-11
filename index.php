@@ -78,7 +78,7 @@ try {
         $replace = str_replace('.jpg', '', $replace);
         $from = strtotime("-3600 second");
         $to   = strtotime("now");
-        $dif = $time_to - $time_from;
+        $dif = $to - $from;
         
         if (strtotime($replace) <= strtotime(date("Y-m-d H:i:s", $dif))){
             echo $blob->getName().": ".$blob->getUrl()."<br />";
