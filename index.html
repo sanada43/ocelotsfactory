@@ -55,6 +55,37 @@
 <p>テキスト</p>
 <h2 id="card">写真</h2>
 <img src="https://ocelotsfactorysakurada.blob.core.windows.net/ocelotsfactoryuploader/raspberrypi00/001.png">
+<?php
+require_once 'vendor\autoload.php';
+
+use WindowsAzure\Common\ServicesBuilder;
+use WindowsAzure\Common\ServiceException;
+
+// Create blob REST proxy.
+$connectionString = "DefaultEndpointsProtocol=http;AccountName=[ocelotsfactorysakurada];AccountKey=[LKv3jMfWWYSWeneGQFMm7FglcRZXGAjtScGrxuXqP2sXqzM+yTa5wdNhb4fujTS/s4x0VtZ6Rovqr/oxA1BWlg==]";
+$blobRestProxy = ServicesBuilder::getInstance()->createBlobService($connectionString);
+
+
+try {
+    // List blobs.
+    $blob_list = $blobRestProxy->listBlobs("ocelotsfactoryuploader");
+    $blobs = $blob_list->getBlobs();
+
+    foreach($blobs as $blob)
+    {
+        echo $blob->getName().": ".$blob->getUrl()."<br />";
+        echo "<img src='".$blob->getUrl()."'><br />";
+    }
+}
+catch(ServiceException $e){
+    // Handle exception based on error codes and messages.
+    // Error codes and messages are here: 
+    // http://msdn.microsoft.com/en-us/library/windowsazure/dd179439.aspx
+    $code = $e->getCode();
+    $error_message = $e->getMessage();
+    echo $code.": ".$error_message."<br />";
+}
+?>
 
 <!-- コンテンツここまで -->
 </div><!-- // contents-inner end -->
