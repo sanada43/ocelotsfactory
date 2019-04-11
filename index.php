@@ -80,7 +80,7 @@ try {
         $to   = strtotime("now");
         $dif = $time_to - $time_from;
         
-        if (strtotime($replace) <= strtotime(date("Y-m-d H:i:s", $dif)){
+        if (strtotime($replace) <= strtotime(date("Y-m-d H:i:s", $dif))){
             echo $blob->getName().": ".$blob->getUrl()."<br />";
             echo "<img src='".$blob->getUrl()."'><br />";
         }
