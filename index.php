@@ -69,7 +69,7 @@ $blobRestProxy = BlobRestProxy::createBlobService($connectionString);
 
 try {
     // List blobs.
-    $blob_list = $blobRestProxy->listBlobs("ocelotsfactoryuploader");
+    $blob_list = $blobRestProxy->listBlobs("ocelotsfactory-view");
     $blobs = $blob_list->getBlobs();
 
     foreach($blobs as $blob)
