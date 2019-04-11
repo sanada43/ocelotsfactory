@@ -63,7 +63,7 @@ use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 use MicrosoftAzure\Storage\Common\ServiceException;
 
 // Create blob REST proxy.
-$connectionString = "DefaultEndpointsProtocol=http;AccountName=[ocelotsfactorysakurada];AccountKey=[LKv3jMfWWYSWeneGQFMm7FglcRZXGAjtScGrxuXqP2sXqzM+yTa5wdNhb4fujTS/s4x0VtZ6Rovqr/oxA1BWlg==]";
+$connectionString = "DefaultEndpointsProtocol=http;AccountName=ocelotsfactorysakurada;AccountKey=LKv3jMfWWYSWeneGQFMm7FglcRZXGAjtScGrxuXqP2sXqzM+yTa5wdNhb4fujTS/s4x0VtZ6Rovqr/oxA1BWlg==";
 $blobRestProxy = BlobRestProxy::createBlobService($connectionString);
 
 
