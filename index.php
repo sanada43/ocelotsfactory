@@ -48,11 +48,11 @@
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWNiMzE2ZTktOTc3Yi00YmEwLWE4ZWQtMjc4ODFkMDNlYTkxIiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
 <p>テキスト</p>
 
-<h3>レポート</h3>
+<h3>表</h3>
 <h2 id="card">カードレポート</h2>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWY5NTEyMzQtZjZiNC00MGJlLTkxM2ItNTQzZDE4ZjFkNjI1IiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
 <p>テキスト</p>
-
+<p>テキスト</p>
 <h2 id="card">写真</h2>
 
 <?php
@@ -113,7 +113,7 @@ catch(ServiceException $e){
 <li><a href="#co2">CO2グラフ</a></li>
 
 </ul>
-<p class="side-title">データ一覧</p>
+<p class="side-title">*** タイトル ***</p>
 <ul class="localnavi">
 <li><a href="#card">カードリーダー</a></li>
 <li><a href="#picture">写真一覧</a></li>
@@ -127,6 +127,24 @@ catch(ServiceException $e){
 <!--右サイドバーここから-->
 
 
+<div class="sticky">
+<p class="side-title">*** タイトル ***</p>
+<ul class="localnavi">
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+</ul>
+<p class="side-title">*** タイトル ***</p>
+<ul class="localnavi">
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+</ul>
+</div>
 
 <!--右サイドバーここまで-->
 </div><!-- // right-sidebar end -->
@@ -134,7 +152,7 @@ catch(ServiceException $e){
 <p id="cds">Designed by <a href="http://www.css-designsample.com/">CSS.Design Sample</a></p>
 <div id="footer">
 <!-- コピーライト / 著作権表示 -->
-<p>Copyright &copy; 大崎コンピュータエンヂニアリング. All Rights Reserved.</p>
+<p>Copyright &copy; *** 企業名｜ショップ名｜タイトルなど ***. All Rights Reserved.</p>
 </div>
 </div>
 </body>
