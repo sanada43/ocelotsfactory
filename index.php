@@ -78,9 +78,9 @@ try {
         //$from = strtotime("-3600 second");
         //$to   = strtotime("now");
         //$dif = $to - $from;
-        //echo date('Y-m-d H:i:s' , strtotime('+1 hour'));
+        echo date('Y-m-d H:i:s' , strtotime('+15 hour'));
         //echo $replace;
-        if (strtotime($replace) >= date('Y-m-d H:i:s' , strtotime('15 hour'))){
+        if (strtotime($replace) >= date('Y-m-d H:i:s' , strtotime('+15 hour'))){
             echo $blob->getName().": ".$blob->getUrl()."<br />";
             echo "<img src='".$blob->getUrl()."'><br />";
         }
