@@ -104,7 +104,7 @@ catch(ServiceException $e){
 <div id="left-sidebar">
 <!-- 左サイドバーここから -->
 
-<p class="side-title">グラフ一覧</p>
+<p class="side-title">データ</p>
 <ul class="localnavi">
 <li><a href="#temp">温度グラフ</a></li>
 <li><a href="#pres">気圧グラフ</a></li>
@@ -119,6 +119,17 @@ catch(ServiceException $e){
 <li><a href="#picture">写真一覧</a></li>
 </ul>
 
+<dl class="sidebar-dl">
+<dt>*** タイトル ***</dt>
+<dd>
+<p>サンプル更新。</p>
+<p>サンプル更新。</p>
+<p>サンプル更新。</p>
+<p>サンプル更新。</p>
+<p>サンプル更新。</p>
+<p>サンプル更新。</p>
+</dd>
+</dl>
 <!--左サイドバーここまで-->
 </div><!-- // left-sidebar end -->
 </div><!-- // container end -->
