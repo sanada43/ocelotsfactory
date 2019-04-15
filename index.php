@@ -54,6 +54,7 @@
 <p>テキスト</p>
 <p>テキスト</p>
 <h2 id="card">写真</h2>
+<img src="https://ocelotsfactorysakurada.blob.core.windows.net/ocelotsfactoryuploader/raspberrypi00/001.png">
 
 <?php
 require_once 'vendor\autoload.php';
@@ -78,8 +79,8 @@ try {
         //$from = strtotime("-3600 second");
         //$to   = strtotime("now");
         //$dif = $to - $from;
-        //echo date('Y-m-d H:i:s' , strtotime('+1 hour')
-        //echo $replace
+        echo date('Y-m-d H:i:s' , strtotime('+1 hour')
+        echo $replace
         if (strtotime($replace) <= date('Y-m-d H:i:s' , strtotime('-1 hour')){
             echo $blob->getName().": ".$blob->getUrl()."<br />";
             echo "<img src='".$blob->getUrl()."'><br />";
@@ -117,6 +118,9 @@ catch(ServiceException $e){
 <ul class="localnavi">
 <li><a href="#card">カードリーダー</a></li>
 <li><a href="#picture">写真一覧</a></li>
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
+<li><a href="#">*** リンク ***</a></li>
 </ul>
 
 <dl class="sidebar-dl">
