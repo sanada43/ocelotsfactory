@@ -48,13 +48,12 @@
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWNiMzE2ZTktOTc3Yi00YmEwLWE4ZWQtMjc4ODFkMDNlYTkxIiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
 <p>テキスト</p>
 
-<h3>表</h3>
+<h3>レポート</h3>
 <h2 id="card">カードレポート</h2>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWY5NTEyMzQtZjZiNC00MGJlLTkxM2ItNTQzZDE4ZjFkNjI1IiwidCI6IjZlYWE4MWI0LTRjYTQtNDBhNi1iYTIxLThmMWQzYjVkYmU0NyJ9" frameborder="0" allowFullScreen="true"></iframe>
 <p>テキスト</p>
-<p>テキスト</p>
+
 <h2 id="card">写真</h2>
-<img src="https://ocelotsfactorysakurada.blob.core.windows.net/ocelotsfactoryuploader/raspberrypi00/001.png">
 
 <?php
 require_once 'vendor\autoload.php';
@@ -79,8 +78,8 @@ try {
         //$from = strtotime("-3600 second");
         //$to   = strtotime("now");
         //$dif = $to - $from;
-        echo date('Y-m-d H:i:s' , strtotime('+1 hour')
-        echo strtotime($replace)
+        //echo date('Y-m-d H:i:s' , strtotime('+1 hour')
+        //echo $replace
         if (strtotime($replace) <= date('Y-m-d H:i:s' , strtotime('-1 hour')){
             echo $blob->getName().": ".$blob->getUrl()."<br />";
             echo "<img src='".$blob->getUrl()."'><br />";
@@ -105,7 +104,7 @@ catch(ServiceException $e){
 <div id="left-sidebar">
 <!-- 左サイドバーここから -->
 
-<p class="side-title">データ</p>
+<p class="side-title">グラフ一覧</p>
 <ul class="localnavi">
 <li><a href="#temp">温度グラフ</a></li>
 <li><a href="#pres">気圧グラフ</a></li>
@@ -114,26 +113,12 @@ catch(ServiceException $e){
 <li><a href="#co2">CO2グラフ</a></li>
 
 </ul>
-<p class="side-title">*** タイトル ***</p>
+<p class="side-title">データ一覧</p>
 <ul class="localnavi">
 <li><a href="#card">カードリーダー</a></li>
 <li><a href="#picture">写真一覧</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
 </ul>
 
-<dl class="sidebar-dl">
-<dt>*** タイトル ***</dt>
-<dd>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-</dd>
-</dl>
 <!--左サイドバーここまで-->
 </div><!-- // left-sidebar end -->
 </div><!-- // container end -->
@@ -141,7 +126,7 @@ catch(ServiceException $e){
 <div id="right-sidebar">
 <!--右サイドバーここから-->
 
-
+<!--
 <div class="sticky">
 <p class="side-title">*** タイトル ***</p>
 <ul class="localnavi">
@@ -159,7 +144,7 @@ catch(ServiceException $e){
 <li><a href="#">*** リンク ***</a></li>
 <li><a href="#">*** リンク ***</a></li>
 </ul>
-</div>
+</div>-->
 
 <!--右サイドバーここまで-->
 </div><!-- // right-sidebar end -->
@@ -167,7 +152,7 @@ catch(ServiceException $e){
 <p id="cds">Designed by <a href="http://www.css-designsample.com/">CSS.Design Sample</a></p>
 <div id="footer">
 <!-- コピーライト / 著作権表示 -->
-<p>Copyright &copy; *** 企業名｜ショップ名｜タイトルなど ***. All Rights Reserved.</p>
+<p>Copyright &copy; 大崎コンピュータエンヂニアリング. All Rights Reserved.</p>
 </div>
 </div>
 </body>
