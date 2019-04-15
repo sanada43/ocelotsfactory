@@ -105,7 +105,7 @@ catch(ServiceException $e){
 <div id="left-sidebar">
 <!-- 左サイドバーここから -->
 
-<p class="side-title">データ</p>
+<p class="side-title">データグラフ</p>
 <ul class="localnavi">
 <li><a href="#temp">温度グラフ</a></li>
 <li><a href="#pres">気圧グラフ</a></li>
@@ -114,26 +114,13 @@ catch(ServiceException $e){
 <li><a href="#co2">CO2グラフ</a></li>
 
 </ul>
-<p class="side-title">*** タイトル ***</p>
+<p class="side-title">一覧</p>
 <ul class="localnavi">
 <li><a href="#card">カードリーダー</a></li>
 <li><a href="#picture">写真一覧</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
 </ul>
 
-<dl class="sidebar-dl">
-<dt>*** タイトル ***</dt>
-<dd>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-<p>サンプル更新。</p>
-</dd>
-</dl>
+
 <!--左サイドバーここまで-->
 </div><!-- // left-sidebar end -->
 </div><!-- // container end -->
@@ -142,24 +129,6 @@ catch(ServiceException $e){
 <!--右サイドバーここから-->
 
 
-<div class="sticky">
-<p class="side-title">*** タイトル ***</p>
-<ul class="localnavi">
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-</ul>
-<p class="side-title">*** タイトル ***</p>
-<ul class="localnavi">
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-</ul>
-</div>
 
 <!--右サイドバーここまで-->
 </div><!-- // right-sidebar end -->
@@ -167,7 +136,7 @@ catch(ServiceException $e){
 <p id="cds">Designed by <a href="http://www.css-designsample.com/">CSS.Design Sample</a></p>
 <div id="footer">
 <!-- コピーライト / 著作権表示 -->
-<p>Copyright &copy; *** 企業名｜ショップ名｜タイトルなど ***. All Rights Reserved.</p>
+<p>Copyright &copy; 大崎コンピュータエンヂニアリング. All Rights Reserved.</p>
 </div>
 </div>
 </body>
