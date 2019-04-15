@@ -126,25 +126,7 @@ catch(ServiceException $e){
 <div id="right-sidebar">
 <!--右サイドバーここから-->
 
-<!--
-<div class="sticky">
-<p class="side-title">*** タイトル ***</p>
-<ul class="localnavi">
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-</ul>
-<p class="side-title">*** タイトル ***</p>
-<ul class="localnavi">
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-<li><a href="#">*** リンク ***</a></li>
-</ul>
-</div>-->
+
 
 <!--右サイドバーここまで-->
 </div><!-- // right-sidebar end -->
